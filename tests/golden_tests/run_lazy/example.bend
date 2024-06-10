@@ -26,8 +26,8 @@
   }
 
 # Write new data types like this
-data Option = (Some val) | None
-data Bool = True | False
+type Option = (Some val) | None
+type Bool = True | False
 
 # You can have pattern matching on definitions
 # Use `*` to ignore a pattern
@@ -46,7 +46,7 @@ data Bool = True | False
   }
 
 # Data types can store values
-data Boxed = (Box val)
+type Boxed = (Box val)
 
 # Types with only one constructor can be destructured using `let` or a single matching definition
 (Box.map (Boxed/Box val) f) = (Boxed/Box (f val))

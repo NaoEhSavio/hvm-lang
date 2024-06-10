@@ -1,8 +1,8 @@
 # Vectorizes if the adts are encoded with tagged scott encoding
-data Box = (New a)
-data Bool = T | F
-data List_ = (Cons x xs) | Nil
-data Pair = (Tup a b)
+type Box = (New a)
+type Bool = T | F
+type List_ = (Cons x xs) | Nil
+type Pair = (Tup a b)
 
 (Tup.and (Pair/Tup (Box/New Bool/T) (Box/New Bool/T))) = Bool/T
 (Tup.and (Pair/Tup a b)) = Bool/F

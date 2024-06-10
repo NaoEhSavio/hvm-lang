@@ -1,5 +1,5 @@
-data Tree = (Leaf x) | (Node x0 x1) 
-data List_ = Nil | (Cons h t)
+type Tree = (Leaf x) | (Node x0 x1) 
+type List_ = Nil | (Cons h t)
 
 sort (Tree/Leaf v) = (List_/Cons v List_/Nil)
 sort (Tree/Node a b) = (merge (sort a) (sort b))

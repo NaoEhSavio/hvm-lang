@@ -23,7 +23,7 @@ impl Ctx<'_> {
   /// Example:
   /// For the program
   /// ```hvm
-  /// data MyList = (Cons h t) | Nil
+  /// type MyList = (Cons h t) | Nil
   /// match x {
   ///   Cons: (A x.h x.t)
   ///   Nil: switch (Foo y) { 0: B; 1: C; _: D }

@@ -1,6 +1,6 @@
-data A = (A)
-data B = (B)
-data C = (B)
+type A = (A)
+type B = (B)
+type C = (B)
 
 Foo (C) = *
 Foo (D) = *

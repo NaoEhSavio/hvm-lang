@@ -349,7 +349,7 @@ fn num_rule(
 /// If we imagine a complex match expression representing what's left of the
 /// encoding of a pattern matching function:
 /// ```hvm
-/// data MyType = (CtrA ctrA_field0 ... ctrA_fieldA) | (CtrB ctrB_field0 ... ctrB_fieldB) | CtrC | ...
+/// type MyType = (CtrA ctrA_field0 ... ctrA_fieldA) | (CtrB ctrB_field0 ... ctrB_fieldB) | CtrC | ...
 ///
 /// case x0 ... xN {
 ///   (CtrA p0_0_0 ... p0_A) p0_1 ... p0_N : (Body0 p0_0_0 ... p0_0_A p0_1 ... p0_N)

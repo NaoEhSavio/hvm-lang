@@ -1,4 +1,4 @@
-data _Box = (Box val)
+type _Box = (Box val)
 
 Box/subst (_Box/Box n) from to = (Box/subst/go n (== from n) to)
 Box/subst/go a 0   to = (_Box/Box a)
